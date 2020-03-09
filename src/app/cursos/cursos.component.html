@@ -1,1 +1,5 @@
-<p>cursos works!</p>
+<ol class="list-group">
+  <li class="list-group-item" *ngFor="let curso of cursos">
+    <a class="alert-link" [routerLink]="['/curso',curso.id]">{{curso.nome}}</a>
+  </li>
+</ol>
